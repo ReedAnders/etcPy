@@ -29,8 +29,8 @@ from etcPy.queue import FTQueue
 
 # Init cluster and view machines
 queue = FTQueue(3, 'queue')
-queue.machines
-queue.leader
+queue.client.machines
+queue.client.leader
 
 #Get log
 queue.client.read('queue')
